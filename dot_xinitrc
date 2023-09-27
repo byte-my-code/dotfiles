@@ -51,5 +51,8 @@ slstatus &
 # Wallpaper manager
 nitrogen --restore &
 
+# emacs daemon
+emacs --daemon &
+
 # Start DWM
 exec dwm
