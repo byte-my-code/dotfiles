@@ -5,8 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export EDITOR='vim'
-export VISUAL='vim'
+export ALTERNATE_EDITOR=""
+export EDITOR='emacsclient -t'          # EDITOR opens in terminal
+export VISUAL='emacsclient -c -a emacs' # VISUAL opens in GUI mode
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -19,3 +20,6 @@ fi
 export BUNDLE_PATH=~/.gems
 export PATH="$HOME/.local/bin:$PATH"
 
+# My custom alias
+alias et='emacsclient -t'
+alias eg='emacsclient -c -a emacs'
