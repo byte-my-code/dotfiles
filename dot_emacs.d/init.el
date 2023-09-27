@@ -158,7 +158,7 @@
              (evil-collection-init))
 
 ;; Chezmoi integration
-(use-package Chezmoi)
+(use-package chezmoi)
 (global-set-key (kbd "C-c C f") #'chezmoi-find)
 (global-set-key (kbd "C-c C s") #'chezmoi-write)
 
